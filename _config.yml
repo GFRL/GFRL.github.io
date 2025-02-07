@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Yubin Ke / Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Yubin Ke"
+description              : &description "I'm a third-year undergraduate majoring in Computer Science(Turing Class) in school of electronics engineering and computer science, Peking University. I am interested in Robotics and Computer Vision, especially for dexterous grasping and manipulation."
 url                      : https://GFRL.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "GFRL/GFRL.github.io"
