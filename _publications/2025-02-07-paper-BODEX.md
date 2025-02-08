@@ -7,7 +7,7 @@ excerpt: ''
 date: 2024-02-17
 venue: '<em>ICRA</em>, 2025'
 paperurl: 'https://arxiv.org/abs/2412.16490'
-citation: '<a href="https://jychen18.github.io/"Jiayi Chen*</a>, <strong>Yubin Ke</strong>*,<a href="https://hughw19.github.io/">He Wang†</a>; <em>ICRA</em>, 2025.'
+citation: '<a href="https://jychen18.github.io/">Jiayi Chen*</a>, <strong>Yubin Ke</strong>*,<a href="https://hughw19.github.io/">He Wang†</a>; <em>ICRA</em>, 2025.'
 # pub_teaser: "images/BOdex.png"
 # pub_project_site: "https://pku-epic.github.io/BODex/"
 # pub_authers: "<a href="https://jychen18.github.io/"Jiayi Chen*</a>, <strong>Yubin Ke</strong>*,<a href="https://hughw19.github.io/">He Wang†</a>"
