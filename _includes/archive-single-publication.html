@@ -21,16 +21,17 @@
           <img src='../{{ post.pub_teaser }}' width="100%">
         </td>
         <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="https://pku-epic.github.io/BODex/">
-            <span class="papertitle">BODex: Scalable and Efficient Robotic Dexterous Grasp Synthesis Using Bilevel Optimization</span>
+          <a href="{{post.pub_project_href }}">
+            <span class="papertitle">{{ post.title }}</span>
           </a>
           <br>
-          <a href="https://jychen18.github.io/">Jiayi Chen*</a>, <strong>Yubin Ke</strong>*,<a href="https://hughw19.github.io/">He Wang†</a>
+          {{ post.pub_authors}}
           <br>
-          <em>ICRA</em>, 2025
+          {{ post.pub_venue }}
           <br>
-          <a href="https://pku-epic.github.io/BODex/">project page</a> /
-          <a href="https://arxiv.org/abs/2412.16490">arXiv</a> / code
+          <a href="{{post.pub_project_href }}">project page</a> /
+          <a href="{{post.pub_paper_href }}">arXiv</a> / 
+          <a href="{{post.pub_code_href }}">code</a>
           <p></p>
         </td>
       </tr>
