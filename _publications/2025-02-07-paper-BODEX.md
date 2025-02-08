@@ -12,7 +12,7 @@ pub_teaser: "images/BODex.png"
 pub_venue: '<em>ICRA</em>, 2025'
 pub_authors: '<a href="https://jychen18.github.io/">Jiayi Chen*</a>, <strong>Yubin Ke</strong>*,<a href="https://hughw19.github.io/">He Wang†</a>'
 pub_project_href: "https://pku-epic.github.io/BODex/"
-# pub_paper_href: "https://arxiv.org/abs/2412.16490"
+pub_paper_href: "https://arxiv.org/abs/2412.16490"
 # pub_code_href: ""
 
 ---
