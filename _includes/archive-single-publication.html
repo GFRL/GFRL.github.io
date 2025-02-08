@@ -1,0 +1,39 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table>
+      <tr>
+        <td style="padding:10px;width:30%;vertical-align:middle">
+          <img src='images/BODex.png' width="100%">
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:middle">
+          <a href="https://pku-epic.github.io/BODex/">
+            <span class="papertitle">BODex: Scalable and Efficient Robotic Dexterous Grasp Synthesis Using Bilevel Optimization</span>
+          </a>
+          <br>
+          Jiayi Chen*, <strong>Yubin Ke</strong>*,             
+          <a href="https://hughw19.github.io/">He Wang†</a>
+          <br>
+          <em>ICRA</em>, 2025
+          <br>
+          <a href="https://pku-epic.github.io/BODex/">project page</a> /
+          <a href="https://arxiv.org/abs/2412.16490">arXiv</a> / code
+          <p></p>
+        </td>
+      </tr>
+
+  </article>
+</div>
