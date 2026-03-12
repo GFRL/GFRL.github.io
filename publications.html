@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Yubin Ke</title>
+    <link rel="icon" href="assets/icons/my-icon.jpg" type="image/jpeg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#306998',
+                        secondary: '#FFD43B'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Loading overlay style -->
+    <style>
+      #loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.3s;
+      }
+      .dark #loading-overlay {
+        background-color: #1a202c;
+      }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #e5e7eb;
+        border-top: 5px solid #306998;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+</head>
+<body class="bg-white min-h-screen">
+    <!-- Loading overlay -->
+    <div id="loading-overlay">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Max-width wrapper -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="w-full">
+            <div id="header-placeholder"></div>
+        </header>
+
+        <main class="container mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Publications</h1>
+            
+            <h2 class="text-xl font-semibold mb-6 text-gray-500 dark:text-gray-400 uppercase tracking-wider">Selected Publications</h2>
+
+            <!-- Publications content will go here -->
+            <div class="prose dark:prose-invert max-w-none">
+                <div class="prose dark:prose-invert max-w-none">
+                    <!-- Dexonomy -->
+                    <div class="flex flex-col md:flex-row gap-8 p-6 mb-6 rounded-xl bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-200 dark:border-yellow-700/50 shadow-lg dark:shadow-[0_0_20px_rgba(234,179,8,0.1)] transition-all hover:shadow-md"">
+                        <div class="w-full md:w-1/3 flex items-center">
+                            <img src='assets/images/publication/Dexonomy.png' class="rounded-lg shadow-sm w-full object-cover" alt="Dexonomy">
+                        </div>
+                        
+                        <div class="w-full md:w-2/3 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-2 !mt-0">
+                                <a href="https://pku-epic.github.io/Dexonomy/" class="text-blue-600 dark:text-blue-400 no-underline hover:underline">
+                                    Dexonomy: Synthesizing All Dexterous Grasp Types in a Grasp Taxonomy
+                                </a>
+                            </h3>
+                            
+                            <p class="text-gray-700 dark:text-gray-300 mb-1">
+                                <a href="https://jychen18.github.io/" class="hover:text-blue-500">Jiayi Chen*</a>, 
+                                <strong>Yubin Ke*</strong>, 
+                                Lin Peng, 
+                                <a href="https://hughw19.github.io/" class="hover:text-blue-500">He Wang†</a>
+                            </p>
+                            
+                            <p class="italic text-gray-600 dark:text-gray-400 mb-3">RSS, 2025</p>
+                            
+                            <div class="flex gap-4 text-sm font-medium">
+                                <a href="https://pku-epic.github.io/Dexonomy/" class="text-blue-500 hover:text-blue-700">Project Page</a>
+                                <span class="text-gray-300">/</span>
+                                <a href="https://arxiv.org/abs/2504.18829" class="text-blue-500 hover:text-blue-700">arXiv</a>
+                                <span class="text-gray-300">/</span>
+                                <a href="https://github.com/JYChen18/Dexonomy" class="text-blue-500 hover:text-blue-700">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BODex -->
+                     <div class="flex flex-col md:flex-row gap-8 p-6 rounded-xl bg-transparent transition-all hover:bg-gray-50 dark:hover:bg-gray-800/30">
+                        <div class="w-full md:w-1/3 flex items-center">
+                            <img src='assets/images/publication/BODex.png' class="rounded-lg shadow-sm w-full object-cover" alt="Dexonomy">
+                        </div>
+                        
+                        <div class="w-full md:w-2/3 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-2 !mt-0">
+                                <a href="https://pku-epic.github.io/BODex/" class="text-blue-600 dark:text-blue-400 no-underline hover:underline">
+                                    BODex: Scalable and Efficient Robotic Dexterous Grasp Synthesis Using Bilevel Optimization
+                                </a>
+                            </h3>
+                            
+                            <p class="text-gray-700 dark:text-gray-300 mb-1">
+                                <a href="https://jychen18.github.io/" class="hover:text-blue-500">Jiayi Chen*</a>, 
+                                <strong>Yubin Ke*</strong>, 
+                                <a href="https://hughw19.github.io/" class="hover:text-blue-500">He Wang†</a>
+                            </p>
+                            
+                            <p class="italic text-gray-600 dark:text-gray-400 mb-3">RSS, 2025</p>
+                            
+                           <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+                            <a href="https://pku-epic.github.io/BODex/" class="text-blue-500 hover:text-blue-700">Project Page</a>
+                            <span class="text-gray-300">/</span>
+                            <a href="https://arxiv.org/abs/2412.16490" class="text-blue-500 hover:text-blue-700">arXiv</a>
+                            <span class="text-gray-300">/</span>
+                            <a href="https://github.com/JYChen18/BODex" class="text-blue-500 hover:text-blue-700">Code</a>
+                            <span class="text-gray-300">/</span>
+                            <a href="https://github.com/JYChen18/DexGraspBench" class="text-blue-500 hover:text-blue-700">Benchmark</a>
+                            <span class="text-gray-300">/</span>
+                            <a href="https://huggingface.co/datasets/JiayiChenPKU/BODex" class="text-blue-500 hover:text-blue-700">Dataset</a>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- BiAssemble-->
+                     <div class="flex flex-col md:flex-row gap-8 p-6 rounded-xl bg-transparent transition-all hover:bg-gray-50 dark:hover:bg-gray-800/30">
+                        <div class="w-full md:w-1/3 flex items-center">
+                            <img src='assets/images/publication/Biassemble.png' class="rounded-lg shadow-sm w-full object-cover" alt="BiAssemble">
+                        </div>
+                        
+                        <div class="w-full md:w-2/3 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-2 !mt-0">
+                                <a href="https://sites.google.com/view/biassembly/" class="text-blue-600 dark:text-blue-400 no-underline hover:underline">
+                                    BiAssemble: Learning Collaborative Affordance for Bimanual Geometric Assembly
+                                </a>
+                            </h3>
+                            
+                            <p class="text-gray-700 dark:text-gray-300 mb-1">
+                                <a href="https://sxy7147.github.io/" class="hover:text-blue-500">Yan Shen*</a>, 
+                                <a href="https://warshallrho.github.io/" class="hover:text-blue-500">Ruihai Wu*</a>, 
+                                <strong>Yubin Ke</strong>, 
+                                Xinyuan Song, Zeyi Li, 
+                                <a href="https://scholar.google.com/citations?hl=en&user=vkQ5_LIAAAAJ" class="hover:text-blue-500">Xiaoqi Li</a>, 
+                                <a href="https://hwfan.io/about-me/" class="hover:text-blue-500">Hongwei Fan</a>, 
+                                <a href="https://luhr2003.github.io/" class="hover:text-blue-500">Haoran Lu</a>, 
+                                <a href="http://zsdonghao.github.io/" class="hover:text-blue-500">Hao Dong</a>
+                            </p>
+                            
+                            <p class="italic text-gray-600 dark:text-gray-400 mb-1 text-sm">ICML, 2025</p>
+                            
+                            <p class="text-sm font-semibold text-red-600 dark:text-red-400 mb-3 flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                                Distinguished Workshop Paper Award @ IROS 2025 Workshop
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+                                <a href="https://sites.google.com/view/biassembly/" class="text-blue-500 hover:text-blue-700">Project Page</a>
+                                <span class="text-gray-300">/</span>
+                                <a href="https://arxiv.org/abs/2506.06221" class="text-blue-500 hover:text-blue-700">arXiv</a>
+                                <span class="text-gray-300">/</span>
+                                <a href="https://github.com/sxy7147/BiAssembly" class="text-blue-500 hover:text-blue-700">Code</a>
+                                <span class="text-gray-300">/</span>
+                                <a href="https://drive.google.com/file/d/1NSCWaSCJWMKELVG1vaz-N4UXU0e68CyF/view?t=2" class="text-blue-500 hover:text-blue-700">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-xl font-semibold mt-16 mb-6 text-gray-500 dark:text-gray-400 uppercase tracking-wider">Other Preprints & Works</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                <div class="prose dark:prose-invert max-w-none">
+                    <!-- TacDexGrasp -->
+                    <div class="flex flex-col md:flex-row gap-8 p-6 rounded-xl bg-transparent transition-all hover:bg-gray-50 dark:hover:bg-gray-800/30">
+                        <div class="w-full md:w-1/3 flex items-center">
+                            <img src='assets/images/publication/TacDexGrasp.png' class="rounded-lg shadow-sm w-full object-cover" alt="TacDexGrasp">
+                        </div>
+                        
+                        <div class="w-full md:w-2/3 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-2 !mt-0">
+                                <a href="https://arxiv.org/abs/2603.07040v1" class="text-blue-600 dark:text-blue-400 no-underline hover:underline">
+                                    TacDexGrasp: Compliant and Robust Dexterous Grasping with Tactile Feedback
+                                </a>
+                            </h3>
+                            
+                            <p class="text-gray-700 dark:text-gray-300 mb-1">
+                                <strong>Yubin Ke</strong>, <a href="https://jychen18.github.io/" class="hover:text-blue-500">Jiayi Chen</a>, Hang Lv, Xiao Zhou, <a href="https://hughw19.github.io/" class="hover:text-blue-500">He Wang</a>
+                            </p>
+                            
+                            <p class="italic text-gray-600 dark:text-gray-400 mb-3 text-sm">
+                                Under Review at IROS, 2026
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+                                <a href="https://arxiv.org/abs/2603.07040v1" class="text-blue-500 hover:text-blue-700">arXiv</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Prrr -->
+                     <div class="flex flex-col md:flex-row gap-8 p-6 rounded-xl bg-transparent transition-all hover:bg-gray-50 dark:hover:bg-gray-800/30">
+                        <div class="w-full md:w-1/3 flex items-center">
+                            <div class="w-full h-32 bg-blue-50 dark:bg-blue-900/10 rounded-lg flex items-center justify-center border border-blue-100 dark:border-blue-900/20">
+                                <span class="text-blue-600 dark:text-blue-400 font-bold">S&P 2026</span>
+                            </div>
+                        </div>
+                        
+                        <div class="w-full md:w-2/3 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-2 !mt-0">
+                                <span class="text-gray-900 dark:text-white">
+                                    Prrr: Personal Random Rewards for Blockchain Reporting
+                                </span>
+                            </h3>
+                            
+                            <p class="text-gray-700 dark:text-gray-300 mb-1">
+                                <a href="https://chenhongyin.com/">Hongyin Chen</a>, <strong>Yubin Ke</strong>, <a href="https://cfcs.pku.edu.cn/english/people/faculty/xiaotiedeng/index.htm">Xiaotie Deng</a>, <a href="https://ittayeyal.github.io/">Ittay Eyal</a>
+                            </p>
+                            
+                            <p class="font-bold text-blue-600 dark:text-blue-400 mb-3 text-sm">
+                                IEEE Symposium on Security and Privacy (S&P), 2026
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+                                <a href="https://arxiv.org/abs/2511.12626" class="text-blue-500 hover:text-blue-700">arXiv</a>
+                                <span class="text-gray-300">/</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/app.js"></script>
+</body>
+</html> 
